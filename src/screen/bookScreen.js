@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 import Data from '../json/bookinfo.json';
+import Tab from '../components/tab';
 
 const Book =() =>{
   return(
@@ -37,6 +38,22 @@ const Book =() =>{
           <Image source={{uri: Data[1].percent}} style={styles.start}/>
         </View>
       </View>
+
+      <View style={styles.BodyStyle}>
+        <View style={styles.bookImgBG}>
+          <Image 
+          source={{uri: Data[2].bookImg}} style={styles.bookImg}
+        />
+        </View>
+        
+        <View style={styles.Detail}>
+          <Text style={styles.name}> {Data[2].name} </Text>
+          <Text style={styles.author}> {Data[2].author} </Text>
+          <Text style={styles.foreword}> {Data[2].foreword} </Text>
+          <View style={styles.unloading}></View>
+          <Image source={{uri: Data[1].percent}} style={styles.start}/>
+        </View>
+      </View>
     </ScrollView>
   );
 }
@@ -48,8 +65,10 @@ const styles=StyleSheet.create({
     height: 170,
     flexDirection: 'row',
     alignItems: 'center',
-    paddingTop:12,
-    paddingLeft:15
+    paddingTop:13,
+    paddingLeft:15,
+    paddingBottom: 12,
+    marginBottom: 1
   },
   bookImgBG:{
     width: 99,

@@ -24,10 +24,10 @@ const Tab=() =>{
 const styles = StyleSheet.create({
   tabBody: {
     height:56,
+    width: 360,
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 48,
-    marginTop: 536
+    marginBottom: 48
   },
   tab: {
     alignItems: 'center',

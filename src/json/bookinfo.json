@@ -14,5 +14,13 @@
     "foreword": "Twenty-six years ago Hannah had her eye shot out.Now she wants...",
     "percent": "https://raw.githubusercontent.com/jiafish/hw_w4/master/assets/Icon/untouch/btn_start%20read.png",
     "bookImg": "https://raw.githubusercontent.com/jiafish/hw_w4/master/assets/Icon/Book/Book2.png"
+  },
+  {
+    "id": "03",
+    "name": "Street Art Activity Book",
+    "author": "Mitchell Beazley",
+    "foreword": "Street art is colorful, vibrant, diverse and exciting.Now, you can create…",
+    "percent": "50% completed",
+    "bookImg": "https://raw.githubusercontent.com/jiafish/hw_w4/master/assets/Icon/Book/Book1.png"
   }
 ]
