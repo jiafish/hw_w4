@@ -1,15 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 import Data from '../json/bookinfo.json';
 
 const Book =() =>{
   return(
-    <View>
+    <ScrollView style={{flex: 1}}>
       <View style={styles.BodyStyle}>
         <View style={styles.bookImgBG}>
-        <Image 
-          source={{uri: Data[0].bookImg}} style={styles.bookImg}
-        />
+          <Image 
+            source={{uri: Data[0].bookImg}} style={styles.bookImg}
+          />
         </View>
         <View style={styles.Detail}>
           <Text style={styles.name}> {Data[0].name} </Text>
@@ -30,16 +30,16 @@ const Book =() =>{
         </View>
         
         <View style={styles.Detail}>
-          <Text style={styles.name}> {Data[1].name} </Text>m 
+          <Text style={styles.name}> {Data[1].name} </Text>
           <Text style={styles.author}> {Data[1].author} </Text>
           <Text style={styles.foreword}> {Data[1].foreword} </Text>
           <View style={styles.unloading}></View>
           <Image source={{uri: Data[1].percent}} style={styles.start}/>
         </View>
       </View>
-    </View>
-  )
-};
+    </ScrollView>
+  );
+}
 
 const styles=StyleSheet.create({
   BodyStyle: {
@@ -54,40 +54,49 @@ const styles=StyleSheet.create({
   bookImgBG:{
     width: 99,
     height: 146,
-    opacity: 0.49,
     backgroundColor: '#f8f8f8',
     borderColor: '#d1d1d1',
     borderWidth: 0.5,
     shadowColor: '#40000000',
     shadowRadius: 2,
-    elevation: 1
+    elevation: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   bookImg: {
     height: 140,
     width: 93
   },
   Detail: {
-    paddingLeft: 24
+    paddingLeft:24,
+    alignItems: 'flex-start'
   },
   name: {
     color: '#2e2e2e',
     fontSize: 18,
-    fontWeight: "bold"
+    fontWeight: "bold",
+    height:22,
+    marginTop: 15
   },
   author: {
     fontSize: 14,
     color: '#717171',
-    fontWeight: 24
+    marginTop: 11,
+    height: 18
   },
   foreword: {
     fontSize: 12,
-    color: '#b1b1b1'
+    color: '#b1b1b1',
+    width: 194,
+    height: 30,
+    marginTop: 11
   },
   unloading: {
     backgroundColor: '#c3c3c3',
     width: 194,
     height: 3,
-    borderRadius: 3
+    borderRadius: 3,
+    marginTop: 10
   },
   loading: {
     width: 97,
@@ -97,12 +106,15 @@ const styles=StyleSheet.create({
   },
   percent: {
     color: '#b1b1b1',
-    fontSize: 12
+    fontSize: 12,
+    marginTop: 12,
+    height: 16,
   },
   start: {
     width: 82,
-    height: 21
+    height: 21,
+    marginTop: 12
   },
-});
+}) 
 
 export default Book;

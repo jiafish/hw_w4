@@ -5,14 +5,14 @@
     "author": "Chloe Benjamin",
     "foreword": "if you were told the date of your death,how would it shape your...",
     "percent": "50% completed",
-    "bookImg": ""
+    "bookImg": "https://raw.githubusercontent.com/jiafish/hw_w4/master/assets/Icon/Book/Book1.png"
   },
   {
     "id": "02",
     "name": "Grist Mill Road",
     "author": "Christopher J.",
     "foreword": "Twenty-six years ago Hannah had her eye shot out.Now she wants...",
-    "percent": "START READ",
-    "bookImg": ""
+    "percent": "https://raw.githubusercontent.com/jiafish/hw_w4/master/assets/Icon/untouch/btn_start%20read.png",
+    "bookImg": "https://raw.githubusercontent.com/jiafish/hw_w4/master/assets/Icon/Book/Book2.png"
   }
 ]
