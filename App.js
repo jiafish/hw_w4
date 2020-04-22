@@ -74,7 +74,7 @@ const App=()=>{
 
 function CustomDrawerContent(props) {
   return (
-    <DrawerContentScrollView {...props}>
+    <DrawerContentScrollView {...props} style={{marginTop: -48}}>
       <View style={styles.headerContent}>
         <Image source={{uri:'https://raw.githubusercontent.com/jiafish/hw_w4/master/assets/Icon/img_user_photo.png'}} style={styles.headImg} />
         <View style={styles.Content} >
